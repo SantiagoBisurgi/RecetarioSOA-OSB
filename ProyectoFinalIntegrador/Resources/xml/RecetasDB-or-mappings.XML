@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:xmlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:xml-content><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<object-persistence xmlns="http://www.eclipse.org/eclipselink/xsds/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:eclipselink="http://www.eclipse.org/eclipselink/xsds/persistence" version="Eclipse Persistence Services - 2.6.7.v20190604-418f1a1c56">
+   <name>RecetasDB-OR</name>
+   <class-mapping-descriptors>
+      <class-mapping-descriptor xsi:type="object-relational-class-mapping-descriptor">
+         <class>RecetasDB.Cocinero</class>
+         <alias>APP.COCINERO</alias>
+         <primary-key>
+            <field table="COCINERO" name="NOMBRECOCINERO" xsi:type="column"/>
+         </primary-key>
+         <events/>
+         <querying>
+            <queries>
+               <query name="RecetasDBSelect" xsi:type="read-all-query">
+                  <reference-class>RecetasDB.Cocinero</reference-class>
+                  <container xsi:type="list-container-policy">
+                     <collection-type>java.util.Vector</collection-type>
+                  </container>
+               </query>
+            </queries>
+         </querying>
+         <attribute-mappings>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>codigo</attribute-name>
+               <field table="COCINERO" name="CODIGO" xsi:type="column"/>
+               <attribute-classification>java.math.BigInteger</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>nombrecocinero</attribute-name>
+               <field table="COCINERO" name="NOMBRECOCINERO" xsi:type="column"/>
+               <attribute-classification>java.lang.String</attribute-classification>
+            </attribute-mapping>
+         </attribute-mappings>
+         <descriptor-type>independent</descriptor-type>
+         <caching>
+            <cache-type>weak-reference</cache-type>
+            <cache-size>-1</cache-size>
+            <always-refresh>true</always-refresh>
+         </caching>
+         <remote-caching>
+            <cache-type>weak-reference</cache-type>
+            <cache-size>-1</cache-size>
+         </remote-caching>
+         <instantiation/>
+         <copying xsi:type="instantiation-copy-policy"/>
+         <tables>
+            <table name="APP.COCINERO"/>
+         </tables>
+         <structure>structureName</structure>
+      </class-mapping-descriptor>
+      <class-mapping-descriptor xsi:type="object-relational-class-mapping-descriptor">
+         <class>RecetasDB.Recetas</class>
+         <alias>APP.RECETAS</alias>
+         <primary-key>
+            <field table="RECETAS" name="CODIGO" xsi:type="column"/>
+         </primary-key>
+         <events/>
+         <querying>
+            <queries>
+               <query name="RecetasDBSelect" xsi:type="read-all-query">
+                  <criteria operator="equal" xsi:type="relation-expression">
+                     <left name="nombre" xsi:type="query-key-expression">
+                        <base xsi:type="base-expression"/>
+                     </left>
+                     <right xsi:type="parameter-expression">
+                        <parameter name="nombreReceta" xsi:type="column"/>
+                     </right>
+                  </criteria>
+                  <arguments>
+                     <argument name="nombreReceta">
+                        <type>java.lang.String</type>
+                     </argument>
+                  </arguments>
+                  <reference-class>RecetasDB.Recetas</reference-class>
+                  <container xsi:type="list-container-policy">
+                     <collection-type>java.util.Vector</collection-type>
+                  </container>
+               </query>
+            </queries>
+         </querying>
+         <attribute-mappings>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>codigo</attribute-name>
+               <field table="RECETAS" name="CODIGO" xsi:type="column"/>
+               <attribute-classification>java.math.BigInteger</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>nombre</attribute-name>
+               <field table="RECETAS" name="NOMBRE" xsi:type="column"/>
+               <attribute-classification>java.lang.String</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>tiempo</attribute-name>
+               <field table="RECETAS" name="TIEMPO" xsi:type="column"/>
+               <attribute-classification>java.lang.String</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>dificultad</attribute-name>
+               <field table="RECETAS" name="DIFICULTAD" xsi:type="column"/>
+               <attribute-classification>java.lang.String</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>porciones</attribute-name>
+               <field table="RECETAS" name="PORCIONES" xsi:type="column"/>
+               <attribute-classification>java.math.BigInteger</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="direct-mapping">
+               <attribute-name>nombrecocinero</attribute-name>
+               <read-only>true</read-only>
+               <properties>
+                  <property name="fkPlaceholder">
+                     <value>true</value>
+                  </property>
+               </properties>
+               <field table="RECETAS" name="NOMBRECOCINERO" xsi:type="column"/>
+               <attribute-classification>java.lang.String</attribute-classification>
+            </attribute-mapping>
+            <attribute-mapping xsi:type="one-to-one-mapping">
+               <attribute-name>cocinero</attribute-name>
+               <properties>
+                  <property name="enabled">
+                     <value>true</value>
+                  </property>
+               </properties>
+               <reference-class>RecetasDB.Cocinero</reference-class>
+               <foreign-key>
+                  <field-reference>
+                     <source-field table="RECETAS" name="NOMBRECOCINERO" xsi:type="column"/>
+                     <target-field table="COCINERO" name="NOMBRECOCINERO" xsi:type="column"/>
+                  </field-reference>
+               </foreign-key>
+               <foreign-key-fields>
+                  <field table="RECETAS" name="NOMBRECOCINERO" xsi:type="column"/>
+               </foreign-key-fields>
+               <batch-reading>true</batch-reading>
+               <indirection xsi:type="value-holder-indirection-policy"/>
+               <selection-query xsi:type="read-object-query">
+                  <reference-class>RecetasDB.Cocinero</reference-class>
+               </selection-query>
+            </attribute-mapping>
+         </attribute-mappings>
+         <descriptor-type>independent</descriptor-type>
+         <caching>
+            <cache-type>weak-reference</cache-type>
+            <cache-size>-1</cache-size>
+            <always-refresh>true</always-refresh>
+         </caching>
+         <remote-caching>
+            <cache-type>weak-reference</cache-type>
+            <cache-size>-1</cache-size>
+         </remote-caching>
+         <instantiation/>
+         <copying xsi:type="instantiation-copy-policy"/>
+         <tables>
+            <table name="APP.RECETAS"/>
+         </tables>
+         <structure>structureName</structure>
+      </class-mapping-descriptor>
+   </class-mapping-descriptors>
+   <login xsi:type="database-login">
+      <platform-class>org.eclipse.persistence.platform.database.oracle.Oracle9Platform</platform-class>
+      <connection-url></connection-url>
+   </login>
+</object-persistence>]]></con:xml-content>
+</con:xmlEntry>

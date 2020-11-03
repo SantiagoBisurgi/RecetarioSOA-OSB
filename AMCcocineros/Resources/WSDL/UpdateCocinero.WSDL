@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:wsdlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:wsdl><![CDATA[<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="UpdateCocinero"
+     targetNamespace="http://xmlns.oracle.com/EjercicioIntegradorRecetas/AMCcocineros/UpdateCocinero"
+     xmlns:tns="http://xmlns.oracle.com/EjercicioIntegradorRecetas/AMCcocineros/UpdateCocinero"
+     xmlns:inp1="http://www.CocineroSchema.org"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://www.CocineroSchema.org" schemaLocation="Schemas/CocineroSchema.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="requestMessage">
+        <wsdl:part name="Entrada" element="inp1:Entrada"/>
+    </wsdl:message>
+    <wsdl:portType name="UpdateCocinero_ptt">
+        <wsdl:operation name="UpdateCocinero">
+            <wsdl:input message="tns:requestMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="UpdateCocinero_bind" type="tns:UpdateCocinero_ptt">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="UpdateCocinero">
+            <soap:operation style="document" soapAction="UpdateCocinero"/>
+            <wsdl:input>
+                <soap:body use="literal" namespace="http://xmlns.oracle.com/EjercicioIntegradorRecetas/AMCcocineros/UpdateCocinero"/>
+            </wsdl:input>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>]]></con:wsdl>
+    <con:dependencies>
+        <con:schemaRef isInclude="false" schemaLocation="Schemas/CocineroSchema.xsd" namespace="http://www.CocineroSchema.org" ref="AMCcocineros/Resources/Schemas/CocineroSchema"/>
+    </con:dependencies>
+    <con:targetNamespace>http://xmlns.oracle.com/EjercicioIntegradorRecetas/AMCcocineros/UpdateCocinero</con:targetNamespace>
+</con:wsdlEntry>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:xmlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:xml-content><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="APP.RECETAS.TIEMPO:db_column_type">VARCHAR</entry>
+   <entry key="APP.RECETAS.NOMBRE:db_column_size">255</entry>
+   <entry key="APP.COCINERO.NOMBRECOCINERO:db_column_not_null">false</entry>
+   <entry key="APP.RECETAS.NOMBRE:db_column_not_null">false</entry>
+   <entry key="APP.COCINERO:db_table_type">TABLE</entry>
+   <entry key="APP.COCINERO:db_column_1">NOMBRECOCINERO</entry>
+   <entry key="APP.COCINERO:db_column_0">CODIGO</entry>
+   <entry key="APP.COCINERO.CODIGO:db_column_type">INTEGER</entry>
+   <entry key="APP.RECETAS.CODIGO:db_column_type">INTEGER</entry>
+   <entry key="APP.COCINERO.NOMBRECOCINERO:db_column_size">255</entry>
+   <entry key="APP.RECETAS.DIFICULTAD:db_column_type">VARCHAR</entry>
+   <entry key="APP.RECETAS.TIEMPO:db_column_not_null">false</entry>
+   <entry key="APP.RECETAS.NOMBRECOCINERO:db_column_not_null">false</entry>
+   <entry key="APP.RECETAS.TIEMPO:db_column_size">255</entry>
+   <entry key="APP.RECETAS.PORCIONES:db_column_type">INTEGER</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="APP.RECETAS.CODIGO:db_column_not_null">false</entry>
+   <entry key="APP.RECETAS:db_table_type">TABLE</entry>
+   <entry key="APP.RECETAS.NOMBRECOCINERO:db_column_type">VARCHAR</entry>
+   <entry key="APP.RECETAS.PORCIONES:db_column_not_null">false</entry>
+   <entry key="APP.RECETAS:db_column_5">NOMBRECOCINERO</entry>
+   <entry key="APP.RECETAS:db_column_4">PORCIONES</entry>
+   <entry key="APP.RECETAS.NOMBRE:db_column_type">VARCHAR</entry>
+   <entry key="APP.RECETAS:db_column_3">DIFICULTAD</entry>
+   <entry key="APP.RECETAS:db_column_2">TIEMPO</entry>
+   <entry key="APP.RECETAS:db_column_1">NOMBRE</entry>
+   <entry key="root_descriptor_alias">APP.RECETAS</entry>
+   <entry key="APP.RECETAS:db_column_0">CODIGO</entry>
+   <entry key="APP.RECETAS.DIFICULTAD:db_column_not_null">false</entry>
+   <entry key="APP.RECETAS.DIFICULTAD:db_column_size">255</entry>
+   <entry key="APP.COCINERO.NOMBRECOCINERO:db_column_type">VARCHAR</entry>
+   <entry key="APP.RECETAS.NOMBRECOCINERO:db_column_size">255</entry>
+   <entry key="APP.COCINERO.CODIGO:db_column_not_null">false</entry>
+</properties>]]></con:xml-content>
+</con:xmlEntry>

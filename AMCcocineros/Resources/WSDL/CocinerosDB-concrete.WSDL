@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:wsdlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:wsdl><![CDATA[<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/EjercicioIntegradorRecetas/AMCcocineros/CocinerosDB" name="CocinerosDB-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:import location="WSDL/CocinerosDB.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/db/EjercicioIntegradorRecetas/AMCcocineros/CocinerosDB"/>
+    <wsdl:binding name="CocinerosDB_ptt-binding" type="coc:CocinerosDB_ptt" xmlns:coc="http://xmlns.oracle.com/pcbpel/adapter/db/EjercicioIntegradorRecetas/AMCcocineros/CocinerosDB">
+        <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+        <wsdl:operation name="insert">
+            <soap:operation soapAction="insert"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="update">
+            <soap:operation soapAction="update"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="CocinerosDBSelect">
+            <soap:operation soapAction="CocinerosDBSelect"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>]]></con:wsdl>
+    <con:dependencies>
+        <con:import location="WSDL/CocinerosDB.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/db/EjercicioIntegradorRecetas/AMCcocineros/CocinerosDB">
+            <con:wsdl ref="AMCcocineros/Resources/WSDL/CocinerosDB"/>
+        </con:import>
+    </con:dependencies>
+    <con:targetNamespace>http://xmlns.oracle.com/pcbpel/adapter/db/EjercicioIntegradorRecetas/AMCcocineros/CocinerosDB</con:targetNamespace>
+</con:wsdlEntry>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:schemaEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:schema><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/RecetasDB" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/RecetasDB" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="RecetasCollection" type="RecetasCollection"/>
+   <xs:complexType name="RecetasCollection">
+      <xs:sequence>
+         <xs:element name="Recetas" type="Recetas" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Recetas">
+      <xs:sequence>
+         <xs:element name="codigo" type="xs:integer" nillable="true"/>
+         <xs:element name="nombre" type="string255" minOccurs="0" nillable="true"/>
+         <xs:element name="tiempo" type="string255" minOccurs="0" nillable="true"/>
+         <xs:element name="dificultad" type="string255" minOccurs="0" nillable="true"/>
+         <xs:element name="porciones" type="xs:integer" minOccurs="0" nillable="true"/>
+         <xs:element name="cocinero" type="Cocinero" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Cocinero">
+      <xs:sequence>
+         <xs:element name="codigo" type="xs:integer" minOccurs="0" nillable="true"/>
+         <xs:element name="nombrecocinero" type="string255" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="RecetasDBSelect_nombreRecetaInputParameters" type="RecetasDBSelect_nombreReceta"/>
+   <xs:complexType name="RecetasDBSelect_nombreReceta">
+      <xs:sequence>
+         <xs:element name="nombreReceta" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="string255">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="255"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>]]></con:schema>
+    <con:targetNamespace>http://xmlns.oracle.com/pcbpel/adapter/db/top/RecetasDB</con:targetNamespace>
+</con:schemaEntry>

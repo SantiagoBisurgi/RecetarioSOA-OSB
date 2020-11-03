@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:wadlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:wadl><![CDATA[<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inp1="http://www.RecetasSchema.org" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="UpdateRecetaRest">RestService_2</doc>
+   <grammars>
+      <xsd:schema xmlns:tns="http://xmlns.oracle.com/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/UpdateReceta" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <xsd:import namespace="http://www.RecetasSchema.org" schemaLocation="../Schemas/RecetasSchema.xsd"/>
+        </xsd:schema>
+   </grammars>
+   <resources>
+      <resource path="/UpdateReceta">
+         <method name="PUT" soa:wsdlOperation="UpdateReceta">
+            <request>
+               <representation mediaType="application/xml" element="cns:Entrada" xmlns:cns="http://www.RecetasSchema.org"/>
+            </request>
+            <response status="202"/>
+         </method>
+      </resource>
+   </resources>
+</application>]]></con:wadl>
+    <con:dependencies>
+        <con:importSchema namespace="http://www.RecetasSchema.org" schemaLocation="../Schemas/RecetasSchema.xsd" ref="ProyectoFinalIntegrador/Resources/Schemas/RecetasSchema"/>
+    </con:dependencies>
+</con:wadlEntry>

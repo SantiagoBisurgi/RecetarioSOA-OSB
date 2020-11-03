@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:schemaEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:schema><![CDATA[<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rece="http://www.RecetasSchema.org"
+            targetNamespace="http://www.RecetasSchema.org" elementFormDefault="qualified">
+  <xsd:element name="Entrada">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Input" type="rece:RecetasType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="RecetasType">
+    <xsd:sequence>
+      <xsd:element name="Codigo" type="xsd:integer"/>
+      <xsd:element name="Nombre" type="xsd:string"/>
+      <xsd:element name="Tiempo" type="xsd:string"/>
+      <xsd:element name="Dificultad" type="xsd:string"/>
+      <xsd:element name="Porciones" type="xsd:integer"/>
+      <xsd:element name="nombreCocinero" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Salida">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Output" type="rece:RecetasType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>]]></con:schema>
+    <con:targetNamespace>http://www.RecetasSchema.org</con:targetNamespace>
+</con:schemaEntry>

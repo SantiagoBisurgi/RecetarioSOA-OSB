@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:schemaEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:schema><![CDATA[<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:coci="http://www.CocineroSchema.org"
+            targetNamespace="http://www.CocineroSchema.org" elementFormDefault="qualified">
+  <xsd:element name="Entrada">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Input" type="coci:complexType1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="complexType1">
+    <xsd:sequence>
+      <xsd:element name="Codigo" type="xsd:integer"/>
+      <xsd:element name="nombreCocinero" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Salida">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Output" type="coci:complexType1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>]]></con:schema>
+    <con:targetNamespace>http://www.CocineroSchema.org</con:targetNamespace>
+</con:schemaEntry>

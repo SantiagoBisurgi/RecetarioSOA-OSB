@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:wadlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:wadl><![CDATA[<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.exampleRecetas.org" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="BPELIntoFileRest">RestService</doc>
+   <grammars>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://www.exampleRecetas.org" schemaLocation="../Schemas/BPELIntoFileSchema.xsd"/>
+        </schema>
+   </grammars>
+   <resources>
+      <resource path="/BPELIntoFile">
+         <method name="POST" soa:wsdlOperation="process">
+            <request>
+               <representation mediaType="application/xml" element="cns:Entrada" xmlns:cns="http://www.exampleRecetas.org"/>
+            </request>
+            <response status="202"/>
+         </method>
+      </resource>
+   </resources>
+</application>]]></con:wadl>
+    <con:dependencies>
+        <con:importSchema namespace="http://www.exampleRecetas.org" schemaLocation="../Schemas/BPELIntoFileSchema.xsd" ref="ProyectoFinalIntegrador/Resources/Schemas/BPELIntoFileSchema"/>
+    </con:dependencies>
+</con:wadlEntry>

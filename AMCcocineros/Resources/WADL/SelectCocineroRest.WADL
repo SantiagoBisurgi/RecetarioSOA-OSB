@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:wadlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:wadl><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inp1="http://www.SelectCocineroSchema.org" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="SelectCocineroRest">RestService</doc>
+   <grammars>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://xmlns.oracle.com/EjercicioIntegradorRecetas/AMCcocineros/SelectCocinero" xmlns:inp1="http://www.SelectCocineroSchema.org" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+            <xsd:import namespace="http://www.SelectCocineroSchema.org"
+                        schemaLocation="Schemas/SelectCocineroSchema.xsd"/>
+        </xsd:schema>
+   </grammars>
+   <resources>
+      <resource path="/SelectCocinero">
+         <method name="GET" soa:wsdlOperation="SelectCocinero">
+            <request soa:paramElement="pns:Entrada" xmlns:pns="http://www.SelectCocineroSchema.org">
+               <param name="nombreCocinero" style="query" soa:expression="$msg.Entrada/inp1:nombreCocinero" type="xsd:string"/>
+            </request>
+            <response status="200">
+               <representation mediaType="application/xml" element="cns:Salida" xmlns:cns="http://www.SelectCocineroSchema.org"/>
+            </response>
+         </method>
+      </resource>
+   </resources>
+</application>]]></con:wadl>
+    <con:dependencies>
+        <con:importSchema namespace="http://www.SelectCocineroSchema.org" schemaLocation="Schemas/SelectCocineroSchema.xsd" ref="AMCcocineros/Resources/Schemas/SelectCocineroSchema"/>
+    </con:dependencies>
+</con:wadlEntry>

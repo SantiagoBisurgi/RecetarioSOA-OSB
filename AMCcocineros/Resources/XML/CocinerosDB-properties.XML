@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:xmlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:xml-content><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="APP.COCINERO.NOMBRECOCINERO:db_column_size">255</entry>
+   <entry key="APP.COCINERO.CODIGO:db_column_not_null">false</entry>
+   <entry key="APP.COCINERO.NOMBRECOCINERO:db_column_not_null">false</entry>
+   <entry key="APP.COCINERO.CODIGO:db_column_type">INTEGER</entry>
+   <entry key="APP.COCINERO:db_table_type">TABLE</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="APP.COCINERO:db_column_1">NOMBRECOCINERO</entry>
+   <entry key="root_descriptor_alias">APP.COCINERO</entry>
+   <entry key="APP.COCINERO:db_column_0">CODIGO</entry>
+   <entry key="APP.COCINERO.NOMBRECOCINERO:db_column_type">VARCHAR</entry>
+</properties>]]></con:xml-content>
+</con:xmlEntry>

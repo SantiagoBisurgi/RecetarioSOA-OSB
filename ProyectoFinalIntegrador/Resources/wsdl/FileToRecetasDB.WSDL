@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:wsdlEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:wsdl><![CDATA[<wsdl:definitions name="FileToRecetasDB" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/file/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/FileToRecetasDB" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/file/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/FileToRecetasDB" xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:pc="http://xmlns.oracle.com/pcbpel/" xmlns:imp1="http://xmlns.oracle.com/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/FileToRecetas" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <plt:partnerLinkType name="Insert_plt">
+    <plt:role name="Insert_role">
+      <plt:portType name="imp1:Insert_ptt"/>
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:import namespace="http://xmlns.oracle.com/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/FileToRecetas" location="FileToRecetas.wsdl"/>
+</wsdl:definitions>]]></con:wsdl>
+    <con:dependencies>
+        <con:import location="FileToRecetas.wsdl" namespace="http://xmlns.oracle.com/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/FileToRecetas">
+            <con:wsdl ref="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetas"/>
+        </con:import>
+    </con:dependencies>
+    <con:targetNamespace>http://xmlns.oracle.com/pcbpel/adapter/file/EjercicioIntegradorRecetas/ProyectoFinalIntegrador/FileToRecetasDB</con:targetNamespace>
+</con:wsdlEntry>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:pipelineEntry xmlns:con="http://www.bea.com/wli/sb/pipeline/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:coreEntry>
+        <con:binding type="SOAP" isSoap12="false" xsi:type="con:SoapBindingType">
+            <con:wsdl ref="AMCcocineros/Resources/WSDL/UpdateCocinero"/>
+            <con:binding>
+                <con:name>UpdateCocinero_bind</con:name>
+                <con:namespace>http://xmlns.oracle.com/EjercicioIntegradorRecetas/AMCcocineros/UpdateCocinero</con:namespace>
+            </con:binding>
+        </con:binding>
+        <con:xqConfiguration>
+            <con:snippetVersion>1.0</con:snippetVersion>
+        </con:xqConfiguration>
+    </con:coreEntry>
+    <con:router>
+        <con:pipeline type="request" name="request-N3f579bfc.N5947341e.0.1750897a1dd.N7de4">
+            <con:stage id="_StageId-N3f579bfc.N5947341e.0.1750897a1dd.N7de2" name="StageTransform" errorHandler="error-N3f579bfc.N5947341e.0.1750897a1dd.N7da6">
+                <con:context>
+                    <con1:userNsDecl prefix="coc" namespace="http://www.CocineroSchema.org" xmlns:con1="http://www.bea.com/wli/sb/stages/config"/>
+                </con:context>
+                <con:actions>
+                    <con1:replace varName="body" contents-only="true" xmlns:con1="http://www.bea.com/wli/sb/stages/transform/config">
+                        <con2:id xmlns:con2="http://www.bea.com/wli/sb/stages/config">_ActionId-N3f579bfc.N5947341e.0.1750897a1dd.N7da7</con2:id>
+                        <con1:expr>
+                            <con2:xsltTransform xmlns:con2="http://www.bea.com/wli/sb/stages/config">
+                                <con2:resource ref="AMCcocineros/Resources/AMcocineroTransform"/>
+                                <con2:input>$body/coc:Entrada</con2:input>
+                            </con2:xsltTransform>
+                        </con1:expr>
+                    </con1:replace>
+                </con:actions>
+            </con:stage>
+        </con:pipeline>
+        <con:pipeline type="response" name="response-N3f579bfc.N5947341e.0.1750897a1dd.N7de3"/>
+        <con:pipeline type="error" name="error-N3f579bfc.N5947341e.0.1750897a1dd.N7da6">
+            <con:stage id="_StageId-N3f579bfc.N5947341e.0.1750897a1dd.N7da5" name="LogUpdateCocinero">
+                <con:context/>
+                <con:actions>
+                    <con1:log xmlns:con1="http://www.bea.com/wli/sb/stages/logging/config">
+                        <con2:id xmlns:con2="http://www.bea.com/wli/sb/stages/config">_ActionId-N3f579bfc.N5947341e.0.1750897a1dd.N7da2</con2:id>
+                        <con1:logLevel>error</con1:logLevel>
+                        <con1:expr>
+                            <con2:xqueryText xmlns:con2="http://www.bea.com/wli/sb/stages/config">$fault</con2:xqueryText>
+                        </con1:expr>
+                        <con1:message>----ERROR_REQUEST_UPDATECOCINERO----</con1:message>
+                    </con1:log>
+                </con:actions>
+            </con:stage>
+        </con:pipeline>
+        <con:flow>
+            <con:pipeline-node name="Pipeline Pair Node1">
+                <con:request>request-N3f579bfc.N5947341e.0.1750897a1dd.N7de4</con:request>
+                <con:response>response-N3f579bfc.N5947341e.0.1750897a1dd.N7de3</con:response>
+            </con:pipeline-node>
+            <con:route-node name="RouteNode1" xmlns:con1="http://www.bea.com/wli/sb/stages/routing/config" xmlns:con2="http://www.bea.com/wli/sb/stages/config">
+                <con:context>
+                    <con2:userNsDecl prefix="coc" namespace="http://www.CocineroSchema.org"/>
+                </con:context>
+                <con:actions>
+                    <con1:route>
+                        <con2:id>_ActionId-N3f579bfc.N5947341e.0.1750897a1dd.N7de5</con2:id>
+                        <con1:service ref="AMCcocineros/CocinerosDB" xsi:type="ref:BusinessServiceRef" xmlns:ref="http://www.bea.com/wli/sb/reference"/>
+                        <con1:operation>update</con1:operation>
+                        <con1:outboundTransform>
+                            <con3:log xmlns:con3="http://www.bea.com/wli/sb/stages/logging/config">
+                                <con2:id>_ActionId-N3f579bfc.N5947341e.0.1750897a1dd.N7d9f</con2:id>
+                                <con3:logLevel>error</con3:logLevel>
+                                <con3:expr>
+                                    <con2:xqueryText>$body/coc:Entrada</con2:xqueryText>
+                                </con3:expr>
+                                <con3:message>----ERROR_ROUTING_REQUEST_UPDATECOCINERO----</con3:message>
+                            </con3:log>
+                        </con1:outboundTransform>
+                        <con1:responseTransform/>
+                    </con1:route>
+                </con:actions>
+            </con:route-node>
+        </con:flow>
+    </con:router>
+</con:pipelineEntry>

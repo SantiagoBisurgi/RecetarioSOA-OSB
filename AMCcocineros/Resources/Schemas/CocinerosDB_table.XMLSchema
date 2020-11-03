@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:schemaEntry xmlns:con="http://www.bea.com/wli/sb/resources/config">
+    <con:schema><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/CocinerosDB" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/CocinerosDB" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="CocineroCollection" type="CocineroCollection"/>
+   <xs:complexType name="CocineroCollection">
+      <xs:sequence>
+         <xs:element name="Cocinero" type="Cocinero" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Cocinero">
+      <xs:sequence>
+         <xs:element name="codigo" type="xs:integer" nillable="true"/>
+         <xs:element name="nombrecocinero" type="string255" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="CocinerosDBSelect_nombreCocineroInputParameters" type="CocinerosDBSelect_nombreCocinero"/>
+   <xs:complexType name="CocinerosDBSelect_nombreCocinero">
+      <xs:sequence>
+         <xs:element name="nombreCocinero" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="string255">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="255"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>]]></con:schema>
+    <con:targetNamespace>http://xmlns.oracle.com/pcbpel/adapter/db/top/CocinerosDB</con:targetNamespace>
+</con:schemaEntry>

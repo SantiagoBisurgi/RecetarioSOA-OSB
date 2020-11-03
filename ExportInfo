@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-fragment name="OSB-IDE_build_1602255805584" version="v2" xmlns:imp="http://www.bea.com/wli/config/importexport">
+    <imp:properties>
+        <imp:property name="username" value="ServiceBus"/>
+        <imp:property name="description" value=""/>
+        <imp:property name="exporttime" value="Fri Oct 09 13:31:04 ART 2020"/>
+        <imp:property name="productname" value="Oracle Service Bus"/>
+        <imp:property name="productversion" value="12.2.1.3.0"/>
+        <imp:property name="projectLevelExport" value="true"/>
+    </imp:properties>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Pipeline/InsertCocineroPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Pipeline/InsertCocineroPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$InsertCocinero"/>
+            <imp:property name="extrefs" value="BusinessService$AMCcocineros$CocinerosDB"/>
+            <imp:property name="extrefs" value="XSLT$AMCcocineros$Resources$AMcocineroTransform"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/RecetasDB-concrete" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/RecetasDB-concrete.WSDL"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$RecetasDB"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WSDL/InsertCocinero" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WSDL/InsertCocinero.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocineroSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Proxy/InsertRecetaRest" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Proxy/InsertRecetaRest.ProxyService"/>
+            <imp:property name="extrefs" value="WADL$ProyectoFinalIntegrador$Resources$wadl$InsertRecetaRest"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$InsertReceta"/>
+            <imp:property name="extrefs" value="Pipeline$ProyectoFinalIntegrador$Pipeline$InsertRecetaPipeline"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/Schemas/SelectSchema" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/Schemas/SelectSchema.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wadl/RestService" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wadl/RestService.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$SelectSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WSDL/UpdateCocinero" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WSDL/UpdateCocinero.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocineroSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Pipeline/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Pipeline/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/RecetasDB" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/RecetasDB.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasDB_table"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/_projectdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/_projectdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Pipeline/UpdateCocineroPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Pipeline/UpdateCocineroPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="BusinessService$AMCcocineros$CocinerosDB"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$UpdateCocinero"/>
+            <imp:property name="extrefs" value="XSLT$AMCcocineros$Resources$AMcocineroTransform"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/xml/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/xml/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/AMCRecetasTransform" typeId="XSLT">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XsltEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/AMCRecetasTransform.XSLT"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasDB_table"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/Schemas/SelectCocineroSchema" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/Schemas/SelectCocineroSchema.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Pipeline/SelectRecetaPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Pipeline/SelectRecetaPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="BusinessService$ProyectoFinalIntegrador$ExternalServices$RecetasDB"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$SelectReceta"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/jca/RecetasDB_db" typeId="JCA">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.JcaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/jca/RecetasDB_db.JCA"/>
+            <imp:property name="extrefs" value="XML$ProyectoFinalIntegrador$Resources$xml$RecetasDB-or-mappings"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$RecetasDB"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/SelectReceta" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/SelectReceta.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$SelectSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/UpdateReceta" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/UpdateReceta.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/CocinerosDB" typeId="BusinessService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.oracle.xmlns.servicebus.business.config.impl.BusinessServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/CocinerosDB.BusinessService"/>
+            <imp:property name="extrefs" value="JCA$AMCcocineros$Resources$CocinerosDB_db"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$CocinerosDB-concrete"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Proxy/FileToRecetasDB" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Proxy/FileToRecetasDB.ProxyService"/>
+            <imp:property name="extrefs" value="JCA$ProyectoFinalIntegrador$Resources$jca$FileToRecetasDB_file"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$FileToRecetasDB-concrete"/>
+            <imp:property name="extrefs" value="Pipeline$ProyectoFinalIntegrador$Pipeline$FileToRecetasDBPipeline"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Proxy/UpdateCocineroRest" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Proxy/UpdateCocineroRest.ProxyService"/>
+            <imp:property name="extrefs" value="Pipeline$AMCcocineros$Pipeline$UpdateCocineroPipeline"/>
+            <imp:property name="extrefs" value="WADL$AMCcocineros$Resources$WADL$UpdateCocineroRest"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$UpdateCocinero"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/XML/CocinerosDB-or-mappings" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/XML/CocinerosDB-or-mappings.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/Schemas/BPELIntoFileSchema" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/Schemas/BPELIntoFileSchema.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/CocinerosDB_db" typeId="JCA">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.JcaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/CocinerosDB_db.JCA"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$CocinerosDB"/>
+            <imp:property name="extrefs" value="XML$AMCcocineros$Resources$XML$CocinerosDB-or-mappings"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WSDL/CocinerosDB" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WSDL/CocinerosDB.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocinerosDB_table"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wadl/InsertRecetaRest" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wadl/InsertRecetaRest.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Proxy/UpdateRecetaRest" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Proxy/UpdateRecetaRest.ProxyService"/>
+            <imp:property name="extrefs" value="WADL$ProyectoFinalIntegrador$Resources$wadl$UpdateRecetaRest"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$UpdateReceta"/>
+            <imp:property name="extrefs" value="Pipeline$ProyectoFinalIntegrador$Pipeline$UpdateRecetaPipeline"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/Schemas/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/Schemas/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/jca/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/jca/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/xml/RecetasDB-properties" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/xml/RecetasDB-properties.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Pipeline/SelectCocineroPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Pipeline/SelectCocineroPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="BusinessService$AMCcocineros$CocinerosDB"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$SelectCocinero"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetas" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetas.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/jca/RecetasDB-properties" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/jca/RecetasDB-properties.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wadl/UpdateRecetaRest" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wadl/UpdateRecetaRest.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/bpelfile" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/bpelfile.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$BPELIntoFileSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WADL/UpdateCocineroRest" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WADL/UpdateCocineroRest.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocineroSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WSDL/CocinerosDB-concrete" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WSDL/CocinerosDB-concrete.WSDL"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$CocinerosDB"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Pipeline/RecetaIntoFilePipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Pipeline/RecetaIntoFilePipeline.Pipeline"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$bpelfile"/>
+            <imp:property name="extrefs" value="BusinessService$ProyectoFinalIntegrador$ExternalServices$BPELExternalService"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/XML/CocinerosDB-properties" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/XML/CocinerosDB-properties.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/Schemas/CocineroSchema" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/Schemas/CocineroSchema.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/xml/RecetasDB-or-mappings" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/xml/RecetasDB-or-mappings.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/XML/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/XML/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WSDL/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WSDL/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Pipeline/InsertRecetaPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Pipeline/InsertRecetaPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="BusinessService$ProyectoFinalIntegrador$ExternalServices$RecetasDB"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$InsertReceta"/>
+            <imp:property name="extrefs" value="XSLT$ProyectoFinalIntegrador$Resources$AMCRecetasTransform"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/BPELIntoFile" typeId="XSLT">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XsltEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/BPELIntoFile.XSLT"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$BPELIntoFileSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/jca/FileToRecetasDB_file" typeId="JCA">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.JcaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/jca/FileToRecetasDB_file.JCA"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$FileToRecetasDB"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/InsertReceta" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/InsertReceta.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Proxy/SelectCocineroRest" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Proxy/SelectCocineroRest.ProxyService"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$SelectCocinero"/>
+            <imp:property name="extrefs" value="Pipeline$AMCcocineros$Pipeline$SelectCocineroPipeline"/>
+            <imp:property name="extrefs" value="WADL$AMCcocineros$Resources$WADL$SelectCocineroRest"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/_projectdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/_projectdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WSDL/SelectCocinero" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WSDL/SelectCocinero.WSDL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$SelectCocineroSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/AMcocineroTransform" typeId="XSLT">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XsltEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/AMcocineroTransform.XSLT"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocineroSchema"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocinerosDB_table"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Proxy/InsertCocineroRest" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Proxy/InsertCocineroRest.ProxyService"/>
+            <imp:property name="extrefs" value="WADL$AMCcocineros$Resources$WADL$InsertCocineroRest"/>
+            <imp:property name="extrefs" value="Pipeline$AMCcocineros$Pipeline$InsertCocineroPipeline"/>
+            <imp:property name="extrefs" value="WSDL$AMCcocineros$Resources$WSDL$InsertCocinero"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Pipeline/UpdateRecetaPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Pipeline/UpdateRecetaPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="BusinessService$ProyectoFinalIntegrador$ExternalServices$RecetasDB"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$UpdateReceta"/>
+            <imp:property name="extrefs" value="XSLT$ProyectoFinalIntegrador$Resources$AMCRecetasTransform"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Pipeline/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Pipeline/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Proxy/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Proxy/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/Schemas/RecetasSchema" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/Schemas/RecetasSchema.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/xml/CocineroDB-or-mappings" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/xml/CocineroDB-or-mappings.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/Schemas/RecetasDB_table" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/Schemas/RecetasDB_table.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/Schemas/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/Schemas/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/FileToRecetasDBMap" typeId="XSLT">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XsltEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/FileToRecetasDBMap.XSLT"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasSchema"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$RecetasDB_table"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WADL/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WADL/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Proxy/BPELIntoFileRest" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Proxy/BPELIntoFileRest.ProxyService"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$bpelfile"/>
+            <imp:property name="extrefs" value="Pipeline$ProyectoFinalIntegrador$Pipeline$RecetaIntoFilePipeline"/>
+            <imp:property name="extrefs" value="WADL$ProyectoFinalIntegrador$Resources$wadl$BPELIntoFileRest"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/ExternalServices/BPELExternalService" typeId="BusinessService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.oracle.xmlns.servicebus.business.config.impl.BusinessServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/ExternalServices/BPELExternalService.BusinessService"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$bpelfile"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Proxy/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Proxy/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WADL/InsertCocineroRest" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WADL/InsertCocineroRest.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$CocineroSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/ExternalServices/RecetasDB" typeId="BusinessService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.oracle.xmlns.servicebus.business.config.impl.BusinessServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/ExternalServices/RecetasDB.BusinessService"/>
+            <imp:property name="extrefs" value="JCA$ProyectoFinalIntegrador$Resources$jca$RecetasDB_db"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$RecetasDB-concrete"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wadl/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wadl/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetasDB-concrete" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetasDB-concrete.WSDL"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$FileToRecetas"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/Schemas/CocinerosDB_table" typeId="XMLSchema">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.SchemaEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/Schemas/CocinerosDB_table.XMLSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/xml/CocineroDB-properties" typeId="XML">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.XmlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/xml/CocineroDB-properties.XML"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wadl/BPELIntoFileRest" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wadl/BPELIntoFileRest.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$ProyectoFinalIntegrador$Resources$Schemas$BPELIntoFileSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/ExternalServices/_folderdata" typeId="LocationData">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/ExternalServices/_folderdata.LocationData"/>
+            <imp:property name="custom _special_data_class" value="com.bea.wli.config.project.impl.LocationDataImpl"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetasDB" typeId="WSDL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WsdlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Resources/wsdl/FileToRecetasDB.WSDL"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$FileToRecetas"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Pipeline/FileToRecetasDBPipeline" typeId="Pipeline">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.pipeline.config.impl.PipelineEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Pipeline/FileToRecetasDBPipeline.Pipeline"/>
+            <imp:property name="extrefs" value="BusinessService$ProyectoFinalIntegrador$ExternalServices$RecetasDB"/>
+            <imp:property name="extrefs" value="XSLT$ProyectoFinalIntegrador$Resources$FileToRecetasDBMap"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$FileToRecetas"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="AMCcocineros/Resources/WADL/SelectCocineroRest" typeId="WADL">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.resources.config.impl.WadlEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="AMCcocineros/Resources/WADL/SelectCocineroRest.WADL"/>
+            <imp:property name="extrefs" value="XMLSchema$AMCcocineros$Resources$Schemas$SelectCocineroSchema"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+    <imp:exportedItemInfo instanceId="ProyectoFinalIntegrador/Proxy/SelectReceta" typeId="ProxyService">
+        <imp:properties>
+            <imp:property name="representationversion" value="0"/>
+            <imp:property name="dataclass" value="com.bea.wli.sb.services.impl.ProxyServiceEntryDocumentImpl"/>
+            <imp:property name="isencrypted" value="false"/>
+            <imp:property name="jarentryname" value="ProyectoFinalIntegrador/Proxy/SelectReceta.ProxyService"/>
+            <imp:property name="extrefs" value="WSDL$ProyectoFinalIntegrador$Resources$wsdl$SelectReceta"/>
+            <imp:property name="extrefs" value="WADL$ProyectoFinalIntegrador$Resources$wadl$RestService"/>
+            <imp:property name="extrefs" value="Pipeline$ProyectoFinalIntegrador$Pipeline$SelectRecetaPipeline"/>
+        </imp:properties>
+    </imp:exportedItemInfo>
+</xml-fragment>
