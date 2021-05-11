@@ -1,5 +1,5 @@
 # RecetarioSOA-OSB
- Proyecto final integrador de la escuelita SOA-OSB. Recetario que permite realizar un altas, modificaciones y consultas de recetas y cocineros. Servicio expuesto como Rest, permite cargar recetas desde un archivo local. Permite guardar un archivo local con las recetas. Realizado en SOA-BPEL-OSB.
+ Proyecto final integrador de la escuelita SOA-OSB. Recetario que permite realizar altas, modificaciones y consultas de recetas y cocineros. Servicio expuesto como Rest, permite cargar recetas desde un archivo local. Permite guardar un archivo local con las recetas. Realizado en SOA-BPEL-OSB.
 
  1- Desarrollar un servicio que permita operar con recetas de comida 
    a- el servicio debe permitir consultar una receta por nombre.
